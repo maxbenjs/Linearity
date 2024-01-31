@@ -66,6 +66,7 @@ except Exception as e:
 - Created Metabase Instance > Connected Redsfhit Database > Created Dashboard
 
 ###### Viewing Metabase Dashboard
+- https://max-learning.metabaseapp.com/dashboard/8-linearity-task-dashboard
+      - To view Dashboard in Metabase, please email: max.schlafli@gmail.com
 - Dashboard PDF has been saved in this repo
-- To view Dashboard in Metabase, please email: max.schlafli@gmail.com
   
