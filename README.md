@@ -60,7 +60,7 @@ except Exception as e:
 
 ### 3: Upload Data to BI Solution
 
-#### Steps
+###### Steps
 - Exported dataFrames to csv and saved locally
 - Created tables and imported data into a personal Redshift datacase running on an EC2 cluster
 - Created Metabase Instance > Connected Redsfhit Database > Created Dashboard
