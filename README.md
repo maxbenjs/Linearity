@@ -1,7 +1,7 @@
 # Linearity
 ---
 
-# Files & Directories
+## Files & Directories
 ---
 
 - Data directory containing csv's of the 2 datasets
@@ -9,9 +9,23 @@
 - Jupyter Analysis Notebook
 - Metabase Dashboard PDF
 
-# Solutions
+## How I approached this task
 ---
-## 1: Python Code  to access postgres database & copy the user data in a Google sheet/csv.
+- Created a Jupyter Notebook to execute Python to access postgres / s3 data
+- Completed all questions from section 3 in Notebook on a flight, given the possibility of working without an internet connection
+-     Jupyter Notebook is there not to be considered as a polished analysis
+-     Answers should be correct, but the goal was to familiarise myself with the data / solutions, before completing task in BI Solution
+-     Jupyter Notebook can nonetheless provide some indication of my comfort within the tool
+- BI Solution
+-     Created Metabase Instance, with 14-day Trial
+-     Uploaded CSV's into Sample Database and answered all questions, before running into Dashboard performance issues
+-     Resumed a paused Redshift database on EC2 cluster
+-     Created 2 new tables and imported the data
+-     Connected Redshift database to Metabase and adjusted underlying queries / questions
+
+## Solutions
+---
+### 1: Python Code  to access postgres database & copy the user data in a Google sheet/csv.
 ```python
 # Database connection params
 host='linearity-postgres.ci4darskkd34.eu-central-1.rds.amazonaws.com'
@@ -29,7 +43,7 @@ except Exception as e:
 df_users_app = pd.read_sql(sql='select * from public.users', con=engine)
 ```
 
-## 2: Python Code to access the accounts data csv from S3 bucket & copy its contents in Google sheet/csv.
+### 2: Python Code to access the accounts data csv from S3 bucket & copy its contents in Google sheet/csv.
 ---
 ```python
 # S3 bucket params
@@ -44,7 +58,7 @@ except Exception as e:
     print(e)
 ```
 
-## 3: Upload Data to BI Solution
+### 3: Upload Data to BI Solution
 
 #### Steps
 - Exported dataFrames to csv and saved locally
