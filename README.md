@@ -13,7 +13,7 @@
 ---
 1. Created a Jupyter Notebook to execute Python to access postgres / s3 data
 2. Completed all questions from section 3 in Notebook on a flight, given the possibility of working without an internet connection
-    - Jupyter Notebook is there not to be considered as a polished analysis
+    - Jupyter Notebook should not to be considered as a polished analysis
     - Answers should be correct, but the goal was to familiarise myself with the data / solutions, before completing task in BI Solution
     - Jupyter Notebook can nonetheless provide some indication of my comfort within the tool
 3. BI Solution
